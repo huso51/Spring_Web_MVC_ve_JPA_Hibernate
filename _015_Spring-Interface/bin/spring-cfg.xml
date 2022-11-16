@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="yakitNesne1" class="org.turkeyjug.Elektrik"/>
+<bean id="yakitNesne2" class="org.turkeyjug.Mazot"/>
+	<bean id="yakitNesne3" class="org.turkeyjug.Benzin"/>
+	
+	
+	<bean id="arabaNesne" class="org.turkeyjug.Araba">
+		<constructor-arg ref="yakitNesne3"/>
+	</bean>
+	
+	
+</beans>

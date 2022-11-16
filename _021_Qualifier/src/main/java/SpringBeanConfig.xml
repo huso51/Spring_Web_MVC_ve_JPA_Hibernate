@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+		<context:annotation-config/>  
+		
+<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/> 
+
+
+	 
+<bean id="dersBean" class="org.turkeyjug.Ders">
+		<property name="dersAdi" value="Geometri"/>
+		<property name="puan" value="75"/>
+<!-- 	<property name="ogrenci" ref="ogrenciBean"/> -->	
+</bean>
+
+
+
+	<bean id="ogrenciBean1" class="org.turkeyjug.Ogrenci">
+		<property name="adi" value="Rafi"/>
+		<property name="soyadi" value="Rahimov"/>
+		 <property name="yasi" value="25"/> 
+	</bean>
+	
+	<bean id="ogrenciBean2" class="org.turkeyjug.Ogrenci">
+		<property name="adi" value="Arslan"/>
+		<property name="soyadi" value="Topçu"/>
+		 <property name="yasi" value="28"/> 
+	</bean>
+	
+	
+	<bean id="ogrenciBean3" class="org.turkeyjug.Ogrenci">
+		<property name="adi" value="Ekrem"/>
+		<property name="soyadi" value="Akşit"/>
+		 <property name="yasi" value="37"/> 
+	</bean>
+	
+			
+	
+<!-- 	
+	<bean id="dersBean1" class="org.turkeyjug.Ders">
+		<constructor-arg ref="ogrenciBean"/>
+	</bean>
+-->
+	 
+
+
+
+	
+	
+	
+</beans>
